@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width">
+    <title>Nueva Palabra-Juego Ahorcado</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body onload="iniciarValores()">
+<header>
+    <div class="cabecera">
+        <h1>
+            <img src="Imagenes/Logo.png">
+        </h1>
+    </div>
+</header>
+<main>
+    <div class="nuevojuego">
+        <ul class="principal">
+            <li>
+                <div class="grafico">
+                    <canvas id="ahorcado" width="300" height="400"></canvas>
+                </div>
+            </li>
+            <li>
+                <div id="letrasadivinadas" class="letrasadivinadas">
+                    <table id="listaletras">
+                    </table>
+                </div>
+            </li>
+            <li>
+                <div class="cajaequivocadas">
+                    <textarea id="letrasequivocadas">
+                    </textarea>
+                </div>
+            </li>
+            <li>
+                <a href="iniciarJuego.html">
+                    <button class="guardarempezar">
+                        Nuevo Juego
+                    </button>
+                </a>
+                <a href="index.html">
+                    <button class="cancelar">
+                        Desistir
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </div>
+</main>
+<footer>
+    <p class="copyright">&copy Copyright - BMW Soft</p>
+    <p class="copyright">email: marwinbodgan@gmail.com</p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
